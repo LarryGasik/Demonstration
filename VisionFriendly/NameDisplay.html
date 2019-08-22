@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--Question 2
+    ==========
+    JavaScript/jQuery – Create an HTML page that has two text boxes and button.  
+    The goal is to have the user type their first and last name into the boxes 
+    and, when the button is pressed, show a greeting with that name.  
+    You can use jQuery if you want.  
+    Here are some test cases:
+    
+    * First name “John”, last name “Smith”:  Display the greeting “Your name is Smith, John”
+    * First name blank, last name “Madonna”:  Display the greeting “Your name is Madonna”
+    * First name “Prince”, last name blank:  Display the greeting “Your name is Prince”
+    * Both fields blank: Display an error message.  Choose a message that is clear to the user.
+    * Either field contains non-alphabetic characters:   Display an error message.  
+        Choose a message that is clear to the user.  For this part, assume that we can only 
+        accept letters of the English alphabet.-->
+    <meta charset="utf-8"/>
+    <title>Vision Friendly Coding Challenge</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<span id="message"></span><br/>
+<label for="firstName">First Name:</label> <input id="firstName" type="text"/><br />
+<label for="firstName">Last Name:</label> <input id="lastName" type="text"/><br />
+<input type="button" id="execute" value="Display Message"/>
+
+<script type="text/javascript">
+    $('#execute').click(function() {
+
+
+        //Let's just assume we can trim the input.
+        var first = $('#firstName').val().trim();
+        var last = $('#lastName').val().trim();
+
+        //Check for values
+        if (!first.length && !last.length) {
+            $("#message").text("You have not entered a name. Please enter a name and try again.");
+            return;
+        }
+
+        //Check for Non-Alphabetic characters
+        var pattern = new RegExp("[^a-zA-Z]");
+        if (pattern.test(first) || pattern.test(last)) {
+            $("#message").text("You have entered a non-alphabetic character. Please only use the English alphabet and try again.");
+            return;
+        }
+
+        var message = '';
+        var name = last;
+        if (first.length && last.length) {
+            name += ', ';
+        }
+        name += first;
+        message = "Your name is " + name;
+        $("#message").text(message);
+    });
+</script>
+</body>
+</html>

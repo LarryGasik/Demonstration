@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegerSumming", "IntegerSumming\IntegerSumming.csproj", "{2AD9215E-D8BF-4547-8694-29419DEDCDD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegerSumming.Tests", "IntegerSumming.Tests\IntegerSumming.Tests.csproj", "{F3251462-DDC7-47FD-9BE3-4747551D8B60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FA868602-58A7-4698-BE6C-69FA06758DF3}"
+	ProjectSection(SolutionItems) = preProject
+		NameDisplay.html = NameDisplay.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AD9215E-D8BF-4547-8694-29419DEDCDD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD9215E-D8BF-4547-8694-29419DEDCDD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD9215E-D8BF-4547-8694-29419DEDCDD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD9215E-D8BF-4547-8694-29419DEDCDD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3251462-DDC7-47FD-9BE3-4747551D8B60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3251462-DDC7-47FD-9BE3-4747551D8B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3251462-DDC7-47FD-9BE3-4747551D8B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3251462-DDC7-47FD-9BE3-4747551D8B60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E7F3C6E-422C-4E73-AB34-0B427C305A7B}
+	EndGlobalSection
+EndGlobal
