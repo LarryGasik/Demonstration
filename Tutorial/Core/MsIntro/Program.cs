@@ -12,11 +12,13 @@ namespace myApp
             
             Console.WriteLine("Hello World!");
             Console.WriteLine("The Current Time is " + DateTime.Now);
+            MessageGenerator mg = new MessageGenerator();
 
             List<string> myList = new List<string>();
             myList.Add("Hello");
             myList.Add("My Friend");
             myList.Add("Hello");
+            myList.Add(mg.GenerateSomeMessage());
 
             foreach (string x in myList)
             {
