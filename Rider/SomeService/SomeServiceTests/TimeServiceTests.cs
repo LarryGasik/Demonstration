@@ -26,7 +26,9 @@ namespace Tests
             [Test]
             public void WhenTimeIsZero()
             {
-                Assert.True(true);
+                DateTime candidate = new DateTime(2000, 1, 1, 1, 1, 0);
+                var result = TimeService.IsSecondEven(candidate);
+                Assert.AreEqual(true, result);
             }
         }
     }
