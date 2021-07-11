@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Fibonacci.Logic;
 
 namespace Fibonacci
@@ -16,7 +17,8 @@ namespace Fibonacci
             string input = Console.ReadLine();
 
             FibonaciGenerator fg = new FibonaciGenerator();
-            var result = fg.fibonacci(Convert.ToInt32(input));
+            List<int> result = fg.fibonacci(Convert.ToInt32(input));
+            result.Sort();
             string output = string.Join(", ", result);
             Console.WriteLine(output);
             Console.WriteLine("You have a nice day.");

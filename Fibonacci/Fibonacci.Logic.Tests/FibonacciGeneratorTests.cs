@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using NUnit.Framework;
 
 namespace Fibonacci.Logic.Tests
 {
-    //Note: I don't know if you use unit tests, what framework you went with,
-    //      but this is what I'm doing to test my output. I don't have the
-    //      exact test cases in front of me, but I think this is what it was.
-    //      Either way, this is the framework for the traditional
-    //      Arrange, Act Assert method. 
-
     [TestFixture]
     public class FibonacciGeneratorTests
     {
