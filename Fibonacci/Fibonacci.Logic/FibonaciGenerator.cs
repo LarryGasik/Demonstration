@@ -23,12 +23,9 @@ namespace Fibonacci.Logic
             //This is to get the list to the correct length in the number of you want.
             while (n > results.Count)
             {
-                //Get the second to last number in the list.
-                var secondToLast = results[results.Count - 2];
-
-                //Grab  the last number in the list.
-                int LastEntry = results.Last();
-                results.Add(secondToLast + LastEntry);
+                //Generate the new Number
+                int newNumber = results.OrderByDescending(x=>x).Take(2).Sum();
+                results.Add(newNumber);
             }
 
             return results;
