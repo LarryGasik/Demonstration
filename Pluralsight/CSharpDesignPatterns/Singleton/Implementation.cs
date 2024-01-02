@@ -1,4 +1,6 @@
-﻿namespace Singleton;
+﻿using System;
+
+namespace Singleton;
 
 /// <summary>
 /// Singleton
@@ -22,5 +24,14 @@ public class Logger
 
             return _instance;
         }
+    }
+
+    /// <summary>
+    /// Singleton Operation
+    /// </summary>
+    /// <param name="message">Message to log</param>
+    public void Log(string message)
+    {
+        Console.WriteLine($"Logged message {message}");
     }
 }
